@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get help with SafeNow. Use GitHub Issues for support. SafeNow does not contact emergency services." />
+    <title>SafeNow support</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310110e'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%23ffc400'/%3E%3Cpath d='M32 14l8 22h-6v12h-4V36h-6z' fill='%2310110e'/%3E%3C/svg%3E" />
+    <style>
+      :root { --bg: #12140f; --ink: #f6f3e8; --muted: #c9c2ae; --line: #3c4033; --yellow: #ffc400; }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: #070806; color: var(--ink); }
+      body { font-family: "Segoe UI", "Atkinson Hyperlegible", system-ui, sans-serif; line-height: 1.5; font-size: 1.125rem; }
+      a { color: var(--yellow); }
+      header, main, footer { max-width: 40rem; margin: 0 auto; padding: 0 24px; }
+      header { padding-top: 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-weight: 700; }
+      .mark { width: 36px; height: 36px; flex: none; }
+      nav { display: flex; gap: 16px; }
+      nav a { color: var(--muted); text-decoration: none; }
+      nav a:hover { color: var(--yellow); }
+      h1 { font-size: 2rem; line-height: 1.15; margin: 32px 0 16px; }
+      h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+      .panel { background: var(--bg); border: 1px solid var(--line); border-radius: 16px; padding: 22px 22px 8px; margin: 24px 0 40px; }
+      footer { padding: 24px 24px 48px; font-size: 0.95rem; color: var(--muted); }
+      ol, ul { padding-left: 1.15rem; }
+      li { margin: 0.35rem 0; }
+      .warn { color: #ffc9c0; }
+      .cta { display: inline-block; background: var(--yellow); color: #1a1400; text-decoration: none; font-weight: 700; padding: 10px 16px; border-radius: 999px; margin: 8px 0 16px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="index.html">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#10110e" />
+          <circle cx="32" cy="32" r="22" fill="#ffc400" />
+          <path d="M32 14l8 22h-6v12h-4V36h-6z" fill="#10110e" />
+        </svg>
+        SafeNow
+      </a>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+    <main>
+      <div class="panel">
+        <h1>Support</h1>
+        <p>SafeNow is an emergency guide you keep on your phone. It is not a rescue service.</p>
+
+        <h2>If you are in danger now</h2>
+        <p class="warn">Follow local officials. Use the emergency number published for the country or area you are in. The SOS screen in SafeNow is a light and sound on this phone only. It does not place a call and it does not contact emergency services. This website cannot see where you are.</p>
+
+        <h2>How to get help with the app</h2>
+        <p>Open a GitHub Issue on the public SafeNow site repository. Please do not include medical details, exact home addresses, or other sensitive information in a public issue.</p>
+        <p><a class="cta" href="https://github.com/oxgirl/safenow-site/issues/new">Open a support issue</a></p>
+        <p>You can also browse <a href="https://github.com/oxgirl/safenow-site/issues">existing issues</a>.</p>
+
+        <h2>Using the app</h2>
+        <ol>
+          <li>Open SafeNow once while you still have a connection, so the bundled guides and your settings can finish loading.</li>
+          <li>The app is designed to work offline after that first launch. The compass, saved places, checklists, and guides are meant to stay available without internet, Wi-Fi, or cell service. GPS can still work from satellites.</li>
+          <li>If you want nearby OpenStreetMap places or a small walking-route map, save them while you are online. Sample places are marked SAMPLE and are not official shelters.</li>
+        </ol>
+
+        <h2>Location</h2>
+        <p>Location is used on the device to point the compass and to show coordinates on the SOS screen. If you deny location access, type a latitude and longitude or search a city you know, then save places while online. See the <a href="privacy.html">privacy policy</a>.</p>
+
+        <h2>This version does not take payment</h2>
+        <p>There is no account, no in-app purchase, and no billing in this version. Safety features are not locked.</p>
+      </div>
+    </main>
+    <footer>
+      <p><a href="index.html">Back to SafeNow</a> · © 2026 Alany Chu</p>
+    </footer>
+  </body>
+</html>
