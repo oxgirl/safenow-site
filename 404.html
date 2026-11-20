@@ -90,9 +90,10 @@
       </div>
     </main>
     <footer class="site-footer">
-      <div class="wrap footer-grid">
-        <div>
-          <a class="footer-brand" href="index.html" aria-label="SafeNow">
+      <div class="wrap">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <a class="footer-brand" href="index.html" aria-label="SafeNow">
           <svg class="brand-lockup" viewBox="0 0 5951 1496.72" role="img" aria-hidden="true" focusable="false">
             <g transform="translate(198.294 198.294) scale(1.074)">
               <path fill="#FFC400" fill-rule="evenodd" d="M512 144 L880 480 L880 832 A48 48 0 0 1 832 880 L192 880 A48 48 0 0 1 144 832 L144 480 Z M512 252 L662 543.2 L512 772 L362 543.2 Z"/>
@@ -102,19 +103,38 @@
             </g>
           </svg>
           </a>
-          <p class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="privacy/">Privacy</a>
-            <a href="support/">Support</a>
-            <a href="https://github.com/oxgirl/safenow-site/issues">Site issues</a>
-          </p>
-          <p>Contact: <a href="mailto:support@safenow.help">support@safenow.help</a></p>
-          <p>© 2026 SafeNow</p>
+            <p class="footer-tagline">Emergency guidance you keep on your phone.</p>
+          </div>
+          <nav class="footer-col" aria-labelledby="footer-product-heading">
+            <h2 class="footer-heading" id="footer-product-heading">Product</h2>
+            <ul class="footer-list">
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="https://testflight.apple.com/join/SJqQeFAy" rel="noopener noreferrer">Join the iOS beta</a></li>
+              <li><span class="footer-coming-soon">App Store: coming soon</span></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-labelledby="footer-support-heading">
+            <h2 class="footer-heading" id="footer-support-heading">Support</h2>
+            <ul class="footer-list">
+              <li><a href="support/">Help</a></li>
+              <li><a href="mailto:support@safenow.help">support@safenow.help</a></li>
+              <li><a href="https://github.com/oxgirl/safenow-site/issues" rel="noopener noreferrer">Report an issue</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-labelledby="footer-legal-heading">
+            <h2 class="footer-heading" id="footer-legal-heading">Legal</h2>
+            <ul class="footer-list">
+              <li><a href="privacy/">Privacy Policy</a></li>
+            </ul>
+          </nav>
         </div>
-        <div>
-          <p>SafeNow does not replace official warnings. If authorities tell you to do something else, do that.</p>
-          <p>Guidance is drawn from Ready.gov, FEMA, CDC, the American Red Cross, and public-domain U.S. Army survival manuals.</p>
-          <p>Map data is © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL.</p>
+        <div class="footer-bottom">
+          <div class="footer-bottom-primary">
+            <p class="footer-copy">© 2026 SafeNow. All rights reserved.</p>
+            <p class="footer-everywhere">Made for everyone, everywhere.</p>
+          </div>
+          <p class="footer-disclaimer">SafeNow does not replace emergency services. In danger, call your local emergency number.</p>
+          <p class="footer-credits">Guidance is drawn from Ready.gov, FEMA, CDC, the American Red Cross, and public-domain U.S. Army survival manuals.<br />Map data is © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL.</p>
         </div>
       </div>
     </footer>
