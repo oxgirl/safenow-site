@@ -107,6 +107,22 @@ a:hover { text-decoration-thickness: 2px; }
 }
 :root[data-theme="light"] a { color: #6b5200; }
 :root[data-theme="dark"] a { color: var(--yellow); }
+a.brand,
+a.footer-brand,
+a.brand:hover,
+a.footer-brand:hover,
+:root[data-theme="light"] a.brand,
+:root[data-theme="light"] a.footer-brand,
+:root[data-theme="light"] a.brand:hover,
+:root[data-theme="light"] a.footer-brand:hover,
+:root[data-theme="dark"] a.brand,
+:root[data-theme="dark"] a.footer-brand,
+:root[data-theme="dark"] a.brand:hover,
+:root[data-theme="dark"] a.footer-brand:hover,
+:root:not([data-theme="dark"]) a.brand,
+:root:not([data-theme="dark"]) a.footer-brand {
+  color: var(--ink);
+}
 
 :focus-visible {
   outline: 3px solid var(--yellow);
@@ -155,18 +171,24 @@ a:hover { text-decoration-thickness: 2px; }
   padding: 14px 0;
 }
 
-.brand {
+.brand,
+.footer-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   color: var(--ink);
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  font-size: 1.15rem;
 }
-.brand:hover { color: var(--ink); text-decoration: none; }
-.mark { width: 36px; height: 36px; flex: none; }
+.brand:hover,
+.footer-brand:hover { color: var(--ink); text-decoration: none; }
+.brand-lockup {
+  display: block;
+  height: 36px;
+  width: auto;
+  aspect-ratio: 5951 / 1496.72;
+  flex: none;
+}
+.footer-brand { margin: 0 0 1rem; }
+.footer-brand .brand-lockup { height: 32px; }
 
 .site-nav {
   grid-column: 1 / -1;

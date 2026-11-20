@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#10110e"/>
-  <circle cx="32" cy="32" r="22" fill="#ffc400"/>
-  <path d="M32 14l8 22h-6v12h-4V36h-6z" fill="#10110e"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <title>SafeNow</title>
+  <rect width="1024" height="1024" rx="192" fill="#10110E"/>
+  <path fill="#FFC400" fill-rule="evenodd" d="M512 144 L880 480 L880 832 A48 48 0 0 1 832 880 L192 880 A48 48 0 0 1 144 832 L144 480 Z M512 252 L662 543.2 L512 772 L362 543.2 Z"/>
 </svg>
