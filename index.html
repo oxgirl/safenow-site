@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SafeNow — Emergency shelter when the network is down</title>
     <meta name="description" content="SafeNow is a free, politically neutral emergency app with a shelter compass, first aid, checklists, and a local SOS signal. It is designed to work offline after first launch. Coming soon to the App Store and Google Play." />
-    <link rel="canonical" href="https://oxgirl.github.io/safenow-site/" />
+    <link rel="canonical" href="https://safenow.help/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SafeNow" />
     <meta property="og:title" content="SafeNow — Emergency shelter when the network is down" />
-    <meta property="og:description" content="A worldwide emergency app with a shelter compass, first aid, and checklists. Designed to work offline after first launch. Coming soon to the App Store and Google Play." />
-    <meta property="og:url" content="https://oxgirl.github.io/safenow-site/" />
-    <meta property="og:image" content="https://oxgirl.github.io/safenow-site/images/og.png" />
+    <meta property="og:description" content="SafeNow is a free, politically neutral emergency app with a shelter compass, first aid, checklists, and a local SOS signal. It is designed to work offline after first launch. Coming soon to the App Store and Google Play." />
+    <meta property="og:url" content="https://safenow.help/" />
+    <meta property="og:image" content="https://safenow.help/images/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -23,7 +23,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="theme-color" content="#10110e" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#e8e2d2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#efe9d8" media="(prefers-color-scheme: light)" />
     <script>
       try {
         var t = localStorage.getItem("safenow-theme");
@@ -45,159 +45,272 @@
             </g>
           </svg>
         </a>
-        <nav class="site-nav" aria-label="Site">
-          <a href="index.html#features">Features</a>
-          <a href="index.html#offline">Offline</a>
-          <a href="index.html#pricing">Pricing</a>
-          <a href="index.html#faq">FAQ</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="support.html">Support</a>
+        <nav class="site-nav site-nav-desktop" aria-label="Site">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#offline">How it works</a>
+            <a href="index.html#pricing">Pricing</a>
+            <a href="index.html#faq">FAQ</a>
+            <a href="privacy/">Privacy</a>
+            <a href="support/">Support</a>
         </nav>
-        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light theme">
-          <svg class="icon-light" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="4" />
-            <path d="M12 3v2M12 19v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M3 12h2M19 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
-          </svg>
-          <svg class="icon-dark" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 7 7 0 0 0 20 14.5z" />
-          </svg>
-        </button>
+        <div class="header-tools">
+          <details class="nav-menu">
+            <summary>Menu</summary>
+            <nav class="site-nav" aria-label="Site">
+              <a href="index.html#features">Features</a>
+              <a href="index.html#offline">How it works</a>
+              <a href="index.html#pricing">Pricing</a>
+              <a href="index.html#faq">FAQ</a>
+              <a href="privacy/">Privacy</a>
+              <a href="support/">Support</a>
+            </nav>
+          </details>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light theme">
+            <svg class="icon-light" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 3v2M12 19v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M3 12h2M19 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </svg>
+            <svg class="icon-dark" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 7 7 0 0 0 20 14.5z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main id="main">
       <section class="hero">
-        <svg class="hero-deco" viewBox="144 144 736 736" aria-hidden="true" focusable="false">
-          <path fill="#FFC400" fill-rule="evenodd" d="M512 144 L880 480 L880 832 A48 48 0 0 1 832 880 L192 880 A48 48 0 0 1 144 832 L144 480 Z M512 252 L662 543.2 L512 772 L362 543.2 Z"/>
-        </svg>
+        <div class="hero-glow" aria-hidden="true"></div>
         <div class="wrap hero-grid">
-          <div>
-            <p class="pill pill-muted">Coming soon to the App Store and Google Play</p>
-            <h1>Get to a saved shelter<br /> when the network is down.</h1>
+          <div class="hero-copy">
+            <img class="app-icon" src="apple-touch-icon.png" width="180" height="180" alt="SafeNow app icon: a yellow shelter mark on a dark field." />
+            <p class="pill pill-muted">App Store: coming soon</p>
+            <h1>Get to a saved shelter when the network is down.</h1>
             <p class="lede">SafeNow is a worldwide emergency app. It is politically neutral, and its aim is to help people survive, not to make money.</p>
             <p>This version is free and does not take payment. The compass, Before / During / After guides, first aid, and checklists stay on the phone. It is available in 20 languages.</p>
             <p class="pill pill-lime">Designed to work offline after first launch</p>
+            <p class="store-row" aria-label="Store availability">
+              <span class="store-soon"><span>App Store</span><small>Coming soon</small></span>
+              <span class="store-soon"><span>Google Play</span><small>Coming soon</small></span>
+            </p>
             <p class="hero-actions">
               <a class="btn btn-primary" href="#features">See what it includes</a>
-              <a class="btn btn-ghost" href="support.html">Get support</a>
+              <a class="btn btn-ghost" href="support/">Get support</a>
             </p>
             <p class="status">SafeNow has been submitted for App Store review. It is not yet available on the App Store or Google Play.</p>
           </div>
-        <figure class="phone">
-          <picture>
-            <source type="image/webp" srcset="images/compass.webp" />
-            <img src="images/compass.jpg" width="900" height="1955" alt="SafeNow shelter compass in practice mode, pointing toward a sample place labeled SAMPLE — North Drill Shelter, with the heading Walk NORTH, a distance of 200 meters, and a warning that this is not a real GPS fix." />
-          </picture>
-        </figure>
+          <div class="hero-visual">
+            <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/home.webp" />
+                  <img src="images/home.jpg" width="900" height="1948" alt="SafeNow home screen with the Shelter North mark, an Offline Ready bar, and a Before stage listing Family, Guides, and Places." />
+                </picture>
+              </div>
+            </figure>
+            
+          </div>
         </div>
       </section>
 
       <section class="section band" id="features">
         <div class="wrap">
           <div class="section-head">
-            <h2>What is on the phone</h2>
+            <p class="kicker">On the phone</p>
+            <h2>Tools that stay with you</h2>
             <p>Guides, places you save, and tools stay on the device. There is no account and no SafeNow server for your notes.</p>
           </div>
 
           <div class="shot-gallery" role="list">
-            <figure class="phone">
-              <picture>
-                <source type="image/webp" srcset="images/compass.webp" />
-                <img src="images/compass.jpg" width="900" height="1955" alt="SafeNow shelter compass in practice mode, pointing toward a sample place labeled SAMPLE — North Drill Shelter, with the heading Walk NORTH, a distance of 200 meters, and a warning that this is not a real GPS fix." />
-              </picture>
-              <figcaption>Shelter compass</figcaption>
+            <div role="listitem">
+              <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/home.webp" />
+                  <img src="images/home.jpg" width="900" height="1948" alt="SafeNow home screen with the Shelter North mark, an Offline Ready bar, and a Before stage listing Family, Guides, and Places." />
+                </picture>
+              </div>
             </figure>
-            <figure class="phone">
-              <picture>
-                <source type="image/webp" srcset="images/home.webp" />
-                <img src="images/home.jpg" width="900" height="1955" alt="SafeNow home screen with an Offline Ready bar and a Before stage listing Family, Guides, Places, Supplies on hand, and Readiness check." />
-              </picture>
-              <figcaption>Before, during, and after</figcaption>
+            <p class="phone-caption">Home</p>
+            </div>
+            <div role="listitem">
+              <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/places.webp" />
+                  <img src="images/places.jpg" width="900" height="1948" alt="SafeNow Places screen stating that only official lists you load and places you save yourself appear here, with filters such as Shelter, Hospital, and Meeting point." />
+                </picture>
+              </div>
             </figure>
-            <figure class="phone">
-              <picture>
-                <source type="image/webp" srcset="images/sos.webp" />
-                <img src="images/sos.jpg" width="900" height="1955" alt="SOS screen titled SOS on this phone, with a warning that it is a light and sound on this phone only and that SafeNow did not contact emergency services, plus buttons to flash the screen, play an optional alarm, and use the torch." />
-              </picture>
-              <figcaption>SOS on this phone only</figcaption>
+            <p class="phone-caption">Places</p>
+            </div>
+            <div role="listitem">
+              <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/checklists.webp" />
+                  <img src="images/checklists.jpg" width="900" height="1948" alt="SafeNow go-bag checklist, Essentials group, with items such as water, food, medications, and identification still unchecked." />
+                </picture>
+              </div>
             </figure>
-            <figure class="phone">
-              <picture>
-                <source type="image/webp" srcset="images/first-aid.webp" />
-                <img src="images/first-aid.jpg" width="900" height="1955" alt="CPR first-aid topic with a notice that action steps stay in English, plus short steps such as shouting for nearby help and pushing hard and fast on the center of the chest. The page states that SafeNow cannot call anyone." />
-              </picture>
-              <figcaption>First aid, including CPR</figcaption>
+            <p class="phone-caption">Checklists</p>
+            </div>
+            <div role="listitem">
+              <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/guides.webp" />
+                  <img src="images/guides.jpg" width="900" height="1948" alt="SafeNow Guides screen with short steps attributed to Ready.gov, including Air raid or missile and Explosion or attack, and a note that official orders override the app." />
+                </picture>
+              </div>
             </figure>
-            <figure class="phone">
-              <picture>
-                <source type="image/webp" srcset="images/readiness.webp" />
-                <img src="images/readiness.jpg" width="900" height="1955" alt="Readiness check listing items such as whether the app is saved for offline, whether a real shelter is saved, and whether a family plan has been started, with a note that a person still has to try airplane mode on a phone." />
-              </picture>
-              <figcaption>Readiness check</figcaption>
+            <p class="phone-caption">Guides</p>
+            </div>
+            <div role="listitem">
+              <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/first-aid.webp" />
+                  <img src="images/first-aid.jpg" width="900" height="1948" alt="SafeNow CPR page, with a notice that action steps stay in English so a translation cannot change them, and the first chest-compression steps." />
+                </picture>
+              </div>
             </figure>
-            <figure class="phone">
-              <picture>
-                <source type="image/webp" srcset="images/map.webp" />
-                <img src="images/map.jpg" width="900" height="1955" alt="Walking route screen showing that no walking streets are saved yet, with a warning that a downloaded area is a small OpenStreetMap extract, not a full map, and a button to save walking streets for the area." />
-              </picture>
-              <figcaption>Optional walking map</figcaption>
+            <p class="phone-caption">First aid</p>
+            </div>
+            <div role="listitem">
+              <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/sos.webp" />
+                  <img src="images/sos.jpg" width="900" height="1948" alt="SafeNow SOS screen titled SOS on this phone, with a warning that it is a light and sound only and did not contact emergency services, and buttons to flash the screen, play an optional alarm, or use the torch." />
+                </picture>
+              </div>
             </figure>
+            <p class="phone-caption">SOS, on this phone only</p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="card-grid">
-            <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 5l3 11-3-1.6L9 16z"/></svg>
-              <h3>Shelter compass</h3>
+      <section class="section">
+        <div class="wrap">
+          <article class="feature-row">
+            <div class="feature-copy">
+              <p class="kicker">Shelter compass</p>
+              <h3>A heading toward a place you actually have</h3>
               <p>A large arrow points toward a place you saved, with the distance and a walking time. It uses this phone’s location and motion sensors on the device. A street map is not required.</p>
-            </article>
-            <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h10"/></svg>
+              <p>SafeNow does not invent shelters. Places come from official lists you load, OpenStreetMap data you save, or places you enter yourself. If none are loaded, the app says that no verified data is available.</p>
+            </div>
+            <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/places.webp" />
+                  <img src="images/places.jpg" width="900" height="1948" alt="SafeNow Places screen stating that only official lists you load and places you save yourself appear here." />
+                </picture>
+              </div>
+            </figure>
+            
+          </article>
+
+          <article class="feature-row flip">
+            <div class="feature-copy">
+              <p class="kicker">Checklists</p>
+              <h3>What to pack, kept on this phone</h3>
+              <p>Go-bag lists based on the Ready.gov emergency kit and the Red Cross supply list. Check items on the phone. They stay here with no account.</p>
+            </div>
+            <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/checklists.webp" />
+                  <img src="images/checklists.jpg" width="900" height="1948" alt="SafeNow go-bag checklist, Essentials group, with items such as water, food, medications, and identification still unchecked." />
+                </picture>
+              </div>
+            </figure>
+            
+          </article>
+
+          <article class="feature-row">
+            <div class="feature-copy">
+              <p class="kicker">Survival guide</p>
               <h3>Before, during, and after</h3>
               <p>Emergency guides are split into short stages: what to prepare, what to do while it is happening, and what to do after. Follow official instructions if they differ from the app.</p>
-            </article>
+            </div>
+            <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/guides.webp" />
+                  <img src="images/guides.jpg" width="900" height="1948" alt="SafeNow Guides screen with short steps attributed to Ready.gov, including Air raid or missile and Explosion or attack." />
+                </picture>
+              </div>
+            </figure>
+            
+          </article>
+
+          <article class="feature-row flip">
+            <div class="feature-copy">
+              <p class="kicker">Twenty languages</p>
+              <h3>Written to be used anywhere</h3>
+              <p>SafeNow is available in 20 languages. It does not take a side in a conflict. Guide text other than English was translated with machine assistance and still needs review by a native speaker. First-aid action steps stay in English so a translation cannot change them.</p>
+            </div>
+            <figure class="device">
+              <div class="device-screen">
+                <picture>
+                  <source type="image/webp" srcset="images/phrases.webp" />
+                  <img src="images/phrases.jpg" width="900" height="1948" alt="SafeNow phrase cards headed Show this card, with English lines for help, water, a doctor, being hurt, shelter, and family." />
+                </picture>
+              </div>
+            </figure>
+            
+          </article>
+        </div>
+      </section>
+
+      <section class="section band">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker">Also on the phone</p>
+            <h2>More tools, same rules</h2>
+            <p>Each of these stays on the device. None of them contact emergency services for you.</p>
+          </div>
+          <div class="card-grid">
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 5l7 7-7 7" /></svg>
-              <h3>Stay or leave</h3>
-              <p>Short decision pages help you think through whether to stay or leave in a given situation. Local officials override this guidance.</p>
-            </article>
-            <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v10M7 12h10"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg>
               <h3>First aid, including CPR</h3>
               <p>Short topics such as CPR, bleeding, burns, and choking. Action steps stay in English so a translation cannot change them. This is reference guidance, not a substitute for training or official care.</p>
             </article>
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v8M8 8h8"/><circle cx="12" cy="16.5" r="3.5"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
               <h3>SOS is local only</h3>
               <p>The SOS screen can flash the screen, play an optional alarm, and use the torch if the phone allows it. It does not place a call and does not contact emergency services.</p>
             </article>
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.4"/><path d="M4 19c.8-3 2.6-4.5 5-4.5S13.2 16 14 19M14 16.2c1.3-.7 2.7-.7 4 0 .6.3 1.1.8 1.5 1.5"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
               <h3>Family medical card</h3>
               <p>Store blood type, allergies, and other notes on the device. There is no account and no SafeNow server for this card.</p>
             </article>
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M5 8h14l-1 12H6L5 8z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v10H4zM4 8l8-4 8 4M12 8v10"/></svg>
               <h3>Supply tracker</h3>
               <p>A supplies list you keep on the phone, so you can see what you already have on hand.</p>
             </article>
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="14" height="10" rx="2"/><path d="M18 11.5h2M8 13h5"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M19 10v4M7 12h6"/></svg>
               <h3>Battery saver</h3>
               <p>A mode that switches the app to a darker screen, to reduce what the display is doing.</p>
             </article>
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h11v12H8zM5 8l3-2v12l-3-2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M8 12l2.5 2.5L16 9"/></svg>
               <h3>Readiness check</h3>
               <p>A checklist that shows whether guides are in the app, whether a real shelter is saved, and whether a family plan has been started. It is a reminder on this phone, not a certification that the app has been tested on a physical device in airplane mode.</p>
             </article>
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14v10H8l-3 3V6z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14v9H8l-3 3V6z"/></svg>
               <h3>Phrase cards</h3>
               <p>Short cards for asking for help, water, a doctor, shelter, and family, in the language you choose.</p>
             </article>
             <article class="card">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4zM8 7v10M4 12h16"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4l8 2v14l-8-2V4zM8 4L4 6v14l4-2M16 6l4-2v14l-4 2"/></svg>
               <h3>Optional walking map</h3>
-              <p>If you want a small street map or walking streets, save an area while you are online. Map tiles and nearby OpenStreetMap places are fetched only when you ask. Community map data can be incomplete. Sample places are marked SAMPLE and are not official shelters.</p>
+              <p>If you want a small street map or walking streets, save an area while you are online. Map tiles and nearby OpenStreetMap places are fetched only when you ask. Community map data can be incomplete.</p>
             </article>
           </div>
         </div>
@@ -206,6 +319,7 @@
       <section class="section" id="offline">
         <div class="wrap">
           <div class="section-head">
+            <p class="kicker">How it works</p>
             <h2>How it is designed to work offline</h2>
             <p>Open the app once with a connection. After that first launch, the core tools are designed to stay on the phone. This has not been published as a test on a physical device in airplane mode.</p>
           </div>
@@ -228,11 +342,11 @@
 
       <section class="section band" id="safety">
         <div class="wrap">
-          <div class="warn-panel panel">
+          <div class="panel warn-panel">
             <h2>Safety disclaimer</h2>
             <p class="warn"><strong>The SOS screen is a light and sound on this phone only.</strong> SafeNow does not place a call and does not contact emergency services. If you are in danger, use the official emergency number for the area you are in.</p>
             <p>SafeNow does not replace official warnings. If authorities tell you to do something else, do that.</p>
-            <p>Sample places are marked SAMPLE and are not official shelters. Community map data from OpenStreetMap can be incomplete. Load a real list from your community before a crisis when you can.</p>
+            <p>SafeNow does not invent shelters. Community map data from OpenStreetMap can be incomplete. Load a real list from your community before a crisis when you can. If no official list is loaded, the app says that no verified data is available.</p>
             <p>Guide text in languages other than English was translated with machine assistance and still needs review by a native speaker. First-aid pages are reference guidance, not a substitute for training or professional care.</p>
           </div>
         </div>
@@ -241,17 +355,18 @@
       <section class="section" id="pricing">
         <div class="wrap">
           <div class="section-head">
+            <p class="kicker">Price</p>
             <h2>Price, and the promise about it</h2>
             <p>The aim is to help people survive, not to make money. Safety features are never paywalled.</p>
           </div>
           <div class="price-grid">
-            <article class="panel price-card">
+            <article class="price-card panel">
               <p class="tag">This version</p>
               <h3>Free</h3>
               <p class="amount">$0</p>
               <p>This version does not take payment. There is no account, no in-app purchase, and no billing. Every safety feature stays open.</p>
             </article>
-            <article class="panel price-card">
+            <article class="price-card panel">
               <p class="tag tag-soon">Planned, not live</p>
               <h3>$1 a month, only in some regions</h3>
               <p class="amount">$1 / month</p>
@@ -261,40 +376,74 @@
         </div>
       </section>
 
-      <section class="section band" id="languages">
+      <section class="section band" id="privacy-promise">
         <div class="wrap">
           <div class="section-head">
+            <p class="kicker">Privacy</p>
+            <h2>A simple privacy promise</h2>
+            <p>There is no account, and there is no SafeNow server for your notes. Read the full <a href="privacy/">privacy policy</a>.</p>
+          </div>
+          <div class="promise-grid">
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>
+              <h3>No account, no analytics</h3>
+              <p>SafeNow has no login. It does not include an analytics, advertising, crash, or tracking SDK. It does not sell personal information.</p>
+            </article>
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.2"/></svg>
+              <h3>Location stays on the phone</h3>
+              <p>The compass uses this device’s location and motion sensors on the device. That location is not sent to SafeNow, because there is no SafeNow server for it.</p>
+            </article>
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h10a3 3 0 0 1 3 3v11H8a3 3 0 0 0-3 3V5z"/><path d="M5 19a3 3 0 0 1 3-3h13"/></svg>
+              <h3>Your notes stay here</h3>
+              <p>Places, family notes, the medical card, checklist ticks, language, and settings are stored on the device. Uninstalling the app or clearing the site data removes them.</p>
+            </article>
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v2M10 13v5M14 10v8M18 7v11"/></svg>
+              <h3>Network only when you ask</h3>
+              <p>Bundled guides do not need a network after first launch. City search, nearby map data, and street-map tiles go to public OpenStreetMap services only if you request them while you are online.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="languages">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker">Languages</p>
             <h2>Twenty languages, politically neutral</h2>
             <p>SafeNow is meant to be used anywhere. It does not take a side in a conflict. Guide text other than English was translated with machine assistance and still needs review by a native speaker.</p>
           </div>
           <ul class="lang-list">
-            <li lang="en">English</li>
-            <li lang="es">Español</li>
-            <li lang="fr">Français</li>
-            <li lang="de">Deutsch</li>
-            <li lang="pt">Português</li>
+            <li>English</li>
+            <li>Español</li>
+            <li>Français</li>
+            <li>Deutsch</li>
+            <li>Português</li>
             <li lang="ar">العربية</li>
             <li lang="fa">فارسی</li>
             <li lang="he">עברית</li>
-            <li lang="uk">Українська</li>
+            <li>Українська</li>
             <li lang="ru">Русский</li>
             <li lang="zh">中文（简体）</li>
             <li lang="hi">हिन्दी</li>
             <li lang="ja">日本語</li>
             <li lang="ko">한국어</li>
-            <li lang="tr">Türkçe</li>
-            <li lang="vi">Tiếng Việt</li>
-            <li lang="id">Bahasa Indonesia</li>
+            <li>Türkçe</li>
+            <li>Tiếng Việt</li>
+            <li>Bahasa Indonesia</li>
             <li lang="ur">اردو</li>
             <li lang="bn">বাংলা</li>
-            <li lang="sw">Kiswahili</li>
+            <li>Kiswahili</li>
           </ul>
         </div>
       </section>
 
-      <section class="section" id="faq">
+      <section class="section band" id="faq">
         <div class="wrap">
           <div class="section-head">
+            <p class="kicker">Questions</p>
             <h2>Questions</h2>
           </div>
           <div class="faq">
@@ -304,7 +453,7 @@
             </details>
             <details>
               <summary>Does it work offline?</summary>
-              <p>SafeNow is designed to work offline after first launch. After you open it once with a connection, the compass, your saved places, the checklists, and the bundled guides are meant to stay available without internet, Wi-Fi, or cell service. GPS can still work from satellites. A street map is optional and is only fetched when you ask, while you are online.</p>
+              <p>SafeNow is designed to work offline after first launch. After you open it once with a connection, the compass, your saved places, the checklists, and the bundled guides are meant to stay available without internet, Wi-Fi, or cell service. GPS can still work from satellites. A street map is optional and is only fetched when you ask, while you are online. This has not been published as a test on a physical device in airplane mode.</p>
             </details>
             <details>
               <summary>Is SafeNow free?</summary>
@@ -312,11 +461,15 @@
             </details>
             <details>
               <summary>When will it be on the App Store and Google Play?</summary>
-              <p>Coming soon to the App Store and Google Play. SafeNow has been submitted for App Store review and is not yet available to download on either store.</p>
+              <p>App Store: coming soon. SafeNow has been submitted for App Store review and is not yet available to download on the App Store or Google Play.</p>
+            </details>
+            <details>
+              <summary>Where do the shelters come from?</summary>
+              <p>SafeNow does not invent shelters. Places come from official lists you load, OpenStreetMap data you save, or places you enter yourself. If none are loaded, the app says that no verified data is available. Community map data can be incomplete.</p>
             </details>
             <details>
               <summary>Do I need an account?</summary>
-              <p>No. There is no account and no login. Places, family notes, medical card details, and checklist ticks stay on the device. See the <a href="privacy.html">privacy policy</a>.</p>
+              <p>No. There is no account and no login. Places, family notes, medical card details, and checklist ticks stay on the device. See the <a href="privacy/">privacy policy</a>.</p>
             </details>
             <details>
               <summary>Where does the guidance come from?</summary>
@@ -327,12 +480,8 @@
               <p>The app is available in 20 languages. Guide text in languages other than English was translated with machine assistance and still needs review by a native speaker before a community relies on it. First-aid action steps stay in English so a translation cannot change them.</p>
             </details>
             <details>
-              <summary>What are the SAMPLE places?</summary>
-              <p>Sample places are fictional and marked SAMPLE. They are not official shelters. Community OpenStreetMap data can be incomplete. Save real places or an official list for your area while you still have a connection, when you can.</p>
-            </details>
-            <details>
               <summary>How do I get help with the app?</summary>
-              <p>If you are in danger now, use the official emergency number for the area you are in. For help with the app itself, see the <a href="support.html">support page</a>.</p>
+              <p>See the <a href="support/">support page</a>. You can open a GitHub Issue on the public SafeNow site repository. Please do not include medical details, exact home addresses, or other sensitive information in a public issue.</p>
             </details>
           </div>
         </div>
@@ -342,7 +491,7 @@
       <div class="wrap footer-grid">
         <div>
           <a class="footer-brand" href="index.html" aria-label="SafeNow">
-            <svg class="brand-lockup" viewBox="0 0 5951 1496.72" role="img" aria-hidden="true" focusable="false">
+          <svg class="brand-lockup" viewBox="0 0 5951 1496.72" role="img" aria-hidden="true" focusable="false">
             <g transform="translate(198.294 198.294) scale(1.074)">
               <path fill="#FFC400" fill-rule="evenodd" d="M512 144 L880 480 L880 832 A48 48 0 0 1 832 880 L192 880 A48 48 0 0 1 144 832 L144 480 Z M512 252 L662 543.2 L512 772 L362 543.2 Z"/>
             </g>
@@ -353,8 +502,8 @@
           </a>
           <p class="footer-links">
             <a href="index.html">Home</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="support.html">Support</a>
+            <a href="privacy/">Privacy</a>
+            <a href="support/">Support</a>
             <a href="https://github.com/oxgirl/safenow-site/issues">Site issues</a>
           </p>
           <p>© 2026 Alany Chu</p>

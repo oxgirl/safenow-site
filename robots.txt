@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://safenow.help/sitemap.xml

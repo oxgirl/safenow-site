@@ -2,12 +2,12 @@
 
 Public marketing, privacy, and support pages for SafeNow.
 
-Live site: https://oxgirl.github.io/safenow-site/
+Live site: https://safenow.help/
 
-- Home: `/` or `/index.html`
-- Privacy policy: `/privacy.html`
-- Support: `/support.html`
+- Home: `/`
+- Privacy policy: `/privacy/` (also `/privacy.html`)
+- Support: `/support/` (also `/support.html`)
 
-This is a static site: plain HTML and CSS, a small theme-toggle script, and no analytics, trackers, or external fonts. GitHub Pages serves the `main` branch.
+This is a static site: plain HTML and CSS, self-hosted fonts, a small theme-toggle script, and no analytics, trackers, or external font or script requests. GitHub Pages serves the `main` branch at the custom domain safenow.help.
 
-Screenshots on the home page are from the real app. SOS is a light and sound on the phone only and does not contact emergency services. Offline wording is limited to “designed to work offline after first launch.”
+Screenshots on the home page are from the real app, captured with no invented places. SOS is a light and sound on the phone only and does not contact emergency services. Offline wording is limited to “designed to work offline after first launch,” and the site states that this has not been published as a test on a physical device in airplane mode.
