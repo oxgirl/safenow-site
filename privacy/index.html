@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SafeNow privacy</title>
-    <meta name="description" content="SafeNow privacy policy: no account, no analytics, and no SafeNow server for your data. Your location stays on your phone unless you choose to share it." />
+    <meta name="description" content="SafeNow privacy policy: no account and no analytics. Your location stays on your phone unless you choose to share it or turn on optional alert notifications." />
     <link rel="canonical" href="https://safenow.help/privacy/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SafeNow" />
     <meta property="og:title" content="SafeNow privacy" />
-    <meta property="og:description" content="SafeNow privacy policy: no account, no analytics, and no SafeNow server for your data. Your location stays on your phone unless you choose to share it." />
+    <meta property="og:description" content="SafeNow privacy policy: no account and no analytics. Your location stays on your phone unless you choose to share it or turn on optional alert notifications." />
     <meta property="og:url" content="https://safenow.help/privacy/" />
     <meta property="og:image" content="https://safenow.help/images/og.png" />
     <meta property="og:image:width" content="1200" />
@@ -82,14 +82,16 @@
         <article class="doc">
           <h1>Privacy policy</h1>
           <p class="dateline">Last updated 23 November 2026. This policy covers the SafeNow iOS and Android apps and this website.</p>
-          <h2>No account, no analytics, no SafeNow server</h2>
-          <p>SafeNow has no account and no login. It does not include an analytics, advertising, crash, or tracking SDK. It does not sell personal information. There is no SafeNow server that receives your places, family notes, medical card, checklist ticks, language, or settings.</p>
+          <h2>No account, no analytics</h2>
+          <p>SafeNow has no account and no login. It does not include an analytics, advertising, crash, or tracking SDK. It does not sell personal information. There is no SafeNow server that receives your places, family notes, medical card, checklist ticks, or settings. The only data SafeNow itself receives is described under Optional alert notifications below, and only if you turn them on.</p>
           <h2>What stays on the device</h2>
           <p>Places, routes you save, the household plan and family medical card, checklist ticks, language, and settings are stored on the device (IndexedDB and local storage). Uninstalling the app or clearing the site data removes them. You can export a JSON or CSV file yourself if you want a copy.</p>
           <h2>Location, compass, and camera</h2>
-          <p>SafeNow uses your location for the map, directions, the compass and SOS. Your location stays on this phone. SafeNow shares it only when you choose to, such as in an SOS text you send yourself or when you download map data for the area around you. A last-known fix can be stored on the device so the compass can keep working if the GPS signal drops. SafeNow itself never receives your location, because there is no SafeNow server for it. SafeNow does not track your location in the background.</p>
+          <p>SafeNow uses your location for the map, directions, the compass and SOS. Your location stays on this phone. SafeNow shares it only when you choose to, such as in an SOS text you send yourself or when you download map data for the area around you. A last-known fix can be stored on the device so the compass can keep working if the GPS signal drops. SafeNow itself does not receive your location unless you turn on optional alert notifications, described below. SafeNow does not track your location in the background.</p>
           <p>The compass uses motion sensors so the arrow can turn with the phone. Those readings stay on the device. SafeNow uses the camera only while you scan a QR code from another phone, such as a shared pin or a move-to-a-new-phone code. Nothing is recorded or sent.</p>
           <p>If you deny location, you can still type a latitude and longitude or search for a city name.</p>
+          <h2>Optional alert notifications</h2>
+          <p>Notifications about official warnings while SafeNow is closed are off unless you turn them on in the app. When they are on, the app sends the SafeNow alert relay a push notification token, your language, and coarse locations rounded to about 1 km: your current location and up to nine places you saved, without their names. The relay uses this only to send notifications about official warnings from the U.S. National Weather Service, the NOAA tsunami warning centers, and the U.S. Geological Survey for those areas. It is not linked to your identity, there is no account, and it is not used for tracking or advertising. Turning the notifications or alerts off removes your subscription from the relay, and a subscription from a phone that stops checking in is deleted after 60 days. A record of which notifications were sent is kept for up to 14 days. Notifications can be late or may not arrive, so keep your phone’s emergency alerts turned on. Emergency audio recordings stay on your phone and are never sent to SafeNow.</p>
           <h2>Network requests you can start while online</h2>
           <p>The app can work from data already on the phone. It does not need a network for the bundled guides, translations, or places you have already saved. If you choose to search for a city, update nearby shelter data, or save a walking-route or street-map area while you have a connection, the app sends that request to public OpenStreetMap services, not to a SafeNow server:</p>
           <ul>
