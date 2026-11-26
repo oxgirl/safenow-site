@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SafeNow privacy</title>
-    <meta name="description" content="SafeNow privacy policy: no account and no analytics. Your location stays on your phone unless you choose to share it or turn on optional alert notifications." />
+    <meta name="description" content="SafeNow and SafeNow Maps privacy policy: no account and no analytics. Your location stays on your phone unless you choose to share it or turn on optional alert notifications." />
     <link rel="canonical" href="https://safenow.help/privacy/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SafeNow" />
     <meta property="og:title" content="SafeNow privacy" />
-    <meta property="og:description" content="SafeNow privacy policy: no account and no analytics. Your location stays on your phone unless you choose to share it or turn on optional alert notifications." />
+    <meta property="og:description" content="SafeNow and SafeNow Maps privacy policy: no account and no analytics. Your location stays on your phone unless you choose to share it or turn on optional alert notifications." />
     <meta property="og:url" content="https://safenow.help/privacy/" />
     <meta property="og:image" content="https://safenow.help/images/og.png" />
     <meta property="og:image:width" content="1200" />
@@ -81,7 +81,7 @@
       <div class="wrap">
         <article class="doc">
           <h1>Privacy policy</h1>
-          <p class="dateline">Last updated 23 November 2026. This policy covers the SafeNow iOS and Android apps and this website.</p>
+          <p class="dateline">Last updated 25 November 2026. This policy covers the SafeNow iOS and Android apps, the SafeNow Maps iOS app (see <a href="#safenow-maps">SafeNow Maps</a>), and this website.</p>
           <h2>No account, no analytics</h2>
           <p>SafeNow has no account and no login. It does not include an analytics, advertising, crash, or tracking SDK. It does not sell personal information. There is no SafeNow server that receives your places, family notes, medical card, checklist ticks, or settings. The only data SafeNow itself receives is described under Optional alert notifications below, and only if you turn them on.</p>
           <h2>What stays on the device</h2>
@@ -101,6 +101,17 @@
           </ul>
           <p>Those services can see the request and the network address it came from, under their own policies. SafeNow does not receive a copy. Official shelter lists included with the app are read from files on the device, not from a SafeNow backend. Map data is © OpenStreetMap contributors, ODbL.</p>
           <p>Some guide screens include ordinary links to public references such as Ready.gov, the American Red Cross, CDC, or WHO. Those pages load only if you open the link.</p>
+          <h2 id="safenow-maps">SafeNow Maps</h2>
+          <p>SafeNow Maps (app.safenow.maps) is a separate iOS map app. It does not collect data. It has no account or login, and it does not include an analytics, advertising, crash, or tracking SDK. Saved maps, saved places, and settings are stored on the device and are removed when you delete them or uninstall the app.</p>
+          <p>SafeNow Maps uses your location only while you use the app, to show your position on the map, measure distances, and give walking and driving directions. Directions are calculated on the phone from map data on the device. Your location stays on the device. It is not sent to SafeNow or to anyone else, and the app does not track your location in the background. If you deny location, you can still search the map and choose start and end points yourself. A place or your location is shared only when you tap Share, which opens the iOS share sheet. You choose the recipient, and the app does not send anything itself.</p>
+          <p>SafeNow Maps makes the network requests below. None of them includes your position, an account, or a device identifier:</p>
+          <ul>
+            <li>Map files. When you save an area, or view the map while you have a connection, the app downloads map data for that area from the SafeNow map file server (safenow-maps.safenow.workers.dev, hosted on Cloudflare). The request shows which map area is downloaded, which can be the area around you, but not your exact position. The server only serves files, and SafeNow keeps no logs of who downloads what. Cloudflare, as the host, may process standard network data such as IP addresses under its own privacy policy.</li>
+            <li>Road closures. The app can read public closure feeds published by transportation agencies, such as Caltrans (cwwp2.dot.ca.gov) and state work-zone (WZDx) feeds, chosen for the region of a saved map.</li>
+            <li>Hazard zones. The app can request official hazard-zone layers, such as CAL FIRE fire hazard severity zones, California tsunami hazard areas, and U.S. Geological Survey fault layers, for the bounding box of a saved map area.</li>
+            <li>Place details. If you ask for more details about a place on the map, the app can query the public OpenStreetMap Overpass API (overpass-api.de) with that place&rsquo;s coordinates.</li>
+          </ul>
+          <p>These services can see the request and the network address it came from, under their own policies. SafeNow does not receive a copy. Map data is &copy; OpenStreetMap contributors, ODbL.</p>
           <h2>This website</h2>
           <p>These pages are static files hosted on GitHub Pages and served at safenow.help. This site does not set a tracking cookie, does not include an analytics script, and does not use an account. GitHub, as the host, may process standard web-server logs such as IP addresses under GitHub’s own privacy policy.</p>
           <h2>Payments</h2>
