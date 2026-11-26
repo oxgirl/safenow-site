@@ -1,7 +1,7 @@
 {
   "name": "SafeNow",
   "short_name": "SafeNow",
-  "description": "A worldwide emergency app with a shelter compass, first aid, and checklists. Designed to work offline after first launch.",
+  "description": "SafeNow is a preparedness and information tool with a compass to places you save, Before / During / After guides, first-aid reference and checklists, being built in 20 languages.",
   "start_url": "./",
   "display": "browser",
   "background_color": "#10110e",
