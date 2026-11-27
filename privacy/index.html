@@ -79,13 +79,16 @@
       <div class="wrap">
         <article class="doc">
           <h1>Privacy policy</h1>
-          <p class="dateline">Last updated 26 November 2026. This policy covers the SafeNow iOS and Android apps, the SafeNow Maps iOS app (see <a href="#safenow-maps">SafeNow Maps</a>), and this website.</p>
+          <p class="dateline">Last updated 27 November 2026. This policy covers the SafeNow iOS and Android apps, the SafeNow Maps iOS app (see <a href="#safenow-maps">SafeNow Maps</a>), and this website.</p>
           <h2>No account, no analytics</h2>
           <p>SafeNow has no account and no login. It does not include an analytics, advertising, crash, or tracking SDK. It does not sell personal information. There is no SafeNow server that receives your places, family notes, medical card, checklist ticks, or settings. The only data SafeNow itself receives is described under Optional alert notifications below, and only if you turn them on.</p>
           <h2>What stays on the device</h2>
           <p>Places, routes you save, the household plan and family medical card, checklist ticks, language, and settings are stored on the device (IndexedDB and local storage). Uninstalling the app or clearing the site data removes them. You can export a JSON or CSV file yourself if you want a copy.</p>
           <h2>Location, compass, and camera</h2>
           <p>SafeNow uses your location for the map, directions, the compass and SOS. Your location stays on this phone. SafeNow shares it only when you choose to, such as in an SOS text you send yourself or when you download map data for the area around you. A last-known fix can be stored on the device so the compass can keep working if the GPS signal drops. SafeNow itself does not receive your location unless you turn on optional alert notifications, described below. SafeNow does not track your location in the background.</p>
+          <ul>
+            <li>When a map, or address, places or lanes files, download for an area, the SafeNow map file server receives a request that indicates that area. This includes the automatic download on Wi-Fi described above, which uses your location to pick the area around you. Your exact coordinates are not sent. The request names the map area.</li>
+          </ul>
           <p>The compass uses motion sensors so the arrow can turn with the phone. Those readings stay on the device. SafeNow uses the camera only while you scan a QR code from another phone, such as a shared pin or a move-to-a-new-phone code. Nothing is recorded or sent.</p>
           <p>If you deny location, you can still type a latitude and longitude or search for a city name.</p>
           <h2>Optional alert notifications</h2>
@@ -95,7 +98,7 @@
           <ul>
             <li>A place-name search or reverse-geocode request to Nominatim (nominatim.openstreetmap.org). That request includes the search text you typed, or coordinates if you asked the app to name a point.</li>
             <li>A bounded map query to the public Overpass API (overpass-api.de) so OpenStreetMap places or walking streets in that area can be saved on the phone. That request includes a geographic bounding box.</li>
-            <li>Map tiles from OpenStreetMap (tile.openstreetmap.org) only if you ask to save or view a street map. Tile requests indicate the map area you viewed.</li>
+            <li>Map files (street map, addresses, places and lanes) from the SafeNow map file server. They download when you open or download a map for an area. Automatic map download is on unless you turn it off in Settings. While it is on and the phone is on Wi-Fi, SafeNow downloads the map for the area around you by itself once your location is known. On mobile data, or if SafeNow can't tell the network type, a map downloads only if you tap.</li>
           </ul>
           <p>Those services can see the request and the network address it came from, under their own policies. SafeNow does not receive a copy. Official shelter lists included with the app are read from files on the device, not from a SafeNow backend. Map data is © OpenStreetMap contributors, ODbL.</p>
           <p>Some guide screens include ordinary links to public references such as Ready.gov, the American Red Cross, CDC, or WHO. Those pages load only if you open the link.</p>
