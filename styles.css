@@ -983,3 +983,10 @@ a.btn-ghost:hover,
   color: var(--ink);
   text-decoration: none;
 }
+
+.footer-operator,
+.footer-address {
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 42rem;
+}
