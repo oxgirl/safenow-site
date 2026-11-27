@@ -984,10 +984,3 @@ a.btn-ghost:hover,
   text-decoration: none;
 }
 
-/* ODbL 4.6 offer and the "Data and licence" sentence.
-   Keep this off until the offer URLs actually serve the derived files
-   or the build method, and an attorney has confirmed the approach.
-   To show the section, set data-odbl-offer="on" on the <html> element. */
-html:not([data-odbl-offer="on"]) .odbl-offer {
-  display: none;
-}
