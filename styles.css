@@ -541,6 +541,31 @@ a.btn-ghost:hover,
   }
   .hero-visual { justify-content: flex-end; }
   .device { width: min(100%, 300px); }
+
+  /* No hero image: don't leave a large empty right column. */
+  .hero:not(:has(.hero-visual)) .hero-glow {
+    inset: -20% 15% auto 15%;
+  }
+  .hero-grid:not(:has(.hero-visual)) {
+    justify-items: center;
+  }
+  .hero-grid:not(:has(.hero-visual)) .hero-copy {
+    max-width: 46rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .hero-grid:not(:has(.hero-visual)) .app-icon {
+    display: block;
+    margin-inline: auto;
+  }
+  .hero-grid:not(:has(.hero-visual)) .lede {
+    max-width: 42rem;
+    margin-inline: auto;
+  }
+  .hero-grid:not(:has(.hero-visual)) .hero-actions,
+  .hero-grid:not(:has(.hero-visual)) .store-row {
+    justify-content: center;
+  }
 }
 
 /* Sections */
