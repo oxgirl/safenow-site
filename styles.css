@@ -530,7 +530,7 @@ a.btn-ghost:hover,
   margin: 0.85rem 0 0;
 }
 
-/* Baked-frame hero shot: shadow and glow only. Do not add .device chrome. */
+/* Baked-frame app shots (hero, gallery, features): shadow only. Do not add .device chrome. */
 .device-shadow {
   width: min(100%, 300px);
   margin: 0;
@@ -597,12 +597,14 @@ a.btn-ghost:hover,
   flex-direction: column;
   align-items: center;
 }
-.shot-gallery .device { width: min(100%, 260px); }
+.shot-gallery .device,
+.shot-gallery .device-shadow { width: min(100%, 260px); }
 .shot-gallery .phone-caption { margin-top: 0.75rem; }
 
 @media (min-width: 720px) {
   .shot-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .shot-gallery .device { width: min(100%, 230px); }
+  .shot-gallery .device,
+  .shot-gallery .device-shadow { width: min(100%, 230px); }
 }
 @media (min-width: 960px) {
   .shot-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -621,18 +623,20 @@ a.btn-ghost:hover,
   max-width: 100%;
   justify-self: stretch;
 }
-.feature-row .device { max-width: 100%; }
+.feature-row .device,
+.feature-row .device-shadow { max-width: 100%; }
 .feature-row:last-of-type { margin-bottom: 0; }
 .feature-copy p { margin: 0.45rem 0 0; color: var(--muted); }
 .feature-copy h3 { font-size: 1.55rem; margin-bottom: 0.35rem; }
 @media (min-width: 880px) {
   .feature-row {
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 300px;
     gap: 3rem;
   }
-  .feature-row.flip { grid-template-columns: 280px 1fr; }
+  .feature-row.flip { grid-template-columns: 300px 1fr; }
   .feature-row.flip .feature-copy { order: 2; }
-  .feature-row .device { width: min(100%, 250px); }
+  .feature-row .device,
+  .feature-row .device-shadow { width: min(100%, 300px); }
 }
 
 .card-grid {
